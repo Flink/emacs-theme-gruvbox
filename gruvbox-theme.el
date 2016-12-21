@@ -78,13 +78,13 @@
       (gruvbox-neutral_aqua   (if (display-graphic-p) "#8ec07c" "#87af87"))
       (gruvbox-neutral_orange (if (display-graphic-p) "#fe8019" "#ff8700"))
 
-      (gruvbox-faded_red      (if (display-graphic-p) "#9d0006" "color-88"))
-      (gruvbox-faded_green    (if (display-graphic-p) "#79740e" "color-100"))
-      (gruvbox-faded_yellow   (if (display-graphic-p) "#b57614" "color-136"))
-      (gruvbox-faded_blue     (if (display-graphic-p) "#076678" "color-24"))
-      (gruvbox-faded_purple   (if (display-graphic-p) "#8f3f71" "color-96"))
-      (gruvbox-faded_aqua     (if (display-graphic-p) "#427b58" "color-66"))
-      (gruvbox-faded_orange   (if (display-graphic-p) "#af3a03" "color-130"))
+      (gruvbox-faded_red      (if (display-graphic-p) "#cc241d" "color-88"))
+      (gruvbox-faded_green    (if (display-graphic-p) "#98971a" "color-100"))
+      (gruvbox-faded_yellow   (if (display-graphic-p) "#d79921" "color-136"))
+      (gruvbox-faded_blue     (if (display-graphic-p) "#458588" "color-24"))
+      (gruvbox-faded_purple   (if (display-graphic-p) "#b16286" "color-96"))
+      (gruvbox-faded_aqua     (if (display-graphic-p) "#689d6a" "color-66"))
+      (gruvbox-faded_orange   (if (display-graphic-p) "#d65d0e" "color-130"))
 
       (gruvbox-dark_red        (if (display-graphic-p) "#421E1E" "color-52"))
       (gruvbox-dark_blue       (if (display-graphic-p) "#2B3C44" "color-4"))
@@ -128,14 +128,14 @@
     `(shadow                            ((t (:foreground ,gruvbox-dark4))))
 
     ;; Built-in syntax
-    `(font-lock-builtin-face            ((t (:foreground ,gruvbox-neutral_orange))))
+    `(font-lock-builtin-face            ((t (:foreground ,gruvbox-neutral_aqua))))
     `(font-lock-constant-face           ((t (:foreground ,gruvbox-neutral_purple))))
-    `(font-lock-comment-face            ((t (:foreground ,gruvbox-dark4))))
-    `(font-lock-function-name-face      ((t (:foreground ,gruvbox-neutral_yellow))))
+    `(font-lock-comment-face            ((t (:foreground ,gruvbox-medium :slant italic))))
+    `(font-lock-function-name-face      ((t (:foreground ,gruvbox-neutral_green :bold t))))
     `(font-lock-keyword-face            ((t (:foreground ,gruvbox-neutral_red))))
     `(font-lock-string-face             ((t (:foreground ,gruvbox-neutral_green))))
     `(font-lock-variable-name-face      ((t (:foreground ,gruvbox-neutral_blue))))
-    `(font-lock-type-face               ((t (:foreground ,gruvbox-neutral_purple))))
+    `(font-lock-type-face               ((t (:foreground ,gruvbox-neutral_yellow))))
     `(font-lock-warning-face            ((t (:foreground ,gruvbox-neutral_red :bold t))))
 
     ;; whitespace-mode
@@ -166,7 +166,7 @@
     `(rainbow-delimiters-unmatched-face ((t (:background nil :foreground ,gruvbox-light0))))
 
     ;; linum-relative
-    `(linum-relative-current-face       ((t (:background ,gruvbox-dark1 :foreground ,gruvbox-light4))))
+    `(linum-relative-current-face       ((t (:background ,gruvbox-dark1 :foreground ,gruvbox-neutral_yellow))))
 
     ;; Highlight indentation mode
     `(highlight-indentation-current-column-face ((t (:background ,gruvbox-dark2 ))))
