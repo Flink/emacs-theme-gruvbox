@@ -433,7 +433,7 @@
                  (file-name-as-directory
                   (file-name-directory load-file-name))))
 
-(provide-theme 'gruvbox)
+(provide-theme 'gruvbox-vim)
 
 ;; Local Variables:
 ;; eval: (when (fboundp 'rainbow-mode) (rainbow-mode +1))
